@@ -24,7 +24,7 @@ const Homepage = () => {
           px: 2,
         }}
       >
-        {/* Headline */}
+        {/* Headline => For Desktop */}
         <Box
           sx={{
             display: { xs: "none", md: "flex" },
@@ -34,7 +34,6 @@ const Homepage = () => {
             width: "100%",
           }}
         >
-          {/* Headline => For Mobile */}
           <Box
             sx={{
               display: "flex",
@@ -49,7 +48,7 @@ const Homepage = () => {
                 display: "flex",
                 justifyContent: "flex-end",
                 alignItems: "center",
-                width: "85%",
+                width: { xs: "78%", mdl: "85%" },
               }}
             >
               <Box
@@ -75,10 +74,60 @@ const Homepage = () => {
               color: "#FFCF00",
               letterSpacing: "3px",
               lineHeight: "100px",
-              fontSize: "61px",
+              fontSize: { xs: "61px", mdl: "75px" },
             }}
           >
             Reflektalpha
+          </Typography>
+        </Box>
+
+        {/* Headline => For Mobile + Tablet View */}
+
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none" },
+            justifyContent: "center",
+            alignItems: "flex-start",
+            flexDirection: "column",
+            position: "relative",
+            width: { xs: "100%", sm: "95%", md: "50%" },
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "center",
+              width: "100%",
+            }}
+          >
+            <Box
+              sx={{
+                width: "200px",
+                height: "9px",
+                backgroundColor: "black",
+              }}
+            ></Box>
+          </Box>
+          <Typography
+            sx={{
+              fontFamily: "AutoTeachnoItalic",
+              color: "#FFCF00",
+              letterSpacing: "3px",
+              fontSize: { xs: "35px", sm: "50px" },
+            }}
+          >
+            Reflekt
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "AutoTeachnoItalic",
+              color: "#FFCF00",
+              letterSpacing: "3px",
+              fontSize: { xs: "40px", sm: "45px" },
+            }}
+          >
+            Alpha
           </Typography>
         </Box>
         {/* Middle Section => Left Text + Right Image */}
@@ -108,7 +157,7 @@ const Homepage = () => {
               sx={{
                 fontFamily: "Robotics",
                 color: "white",
-                fontSize: "20px",
+                fontSize: { xs: "18px", sm: "20px" },
               }}
             >
               The Reflekt Alpha Chip is an NFT that grants you mirror access to
@@ -119,7 +168,7 @@ const Homepage = () => {
               sx={{
                 fontFamily: "Robotics",
                 color: "white",
-                fontSize: "20px",
+                fontSize: { xs: "18px", sm: "20px" },
                 marginTop: 2,
               }}
             >
@@ -130,7 +179,7 @@ const Homepage = () => {
               sx={{
                 fontFamily: "Robotics",
                 color: "white",
-                fontSize: "20px",
+                fontSize: { xs: "18px", sm: "20px" },
                 marginTop: 2,
               }}
             >
@@ -140,7 +189,7 @@ const Homepage = () => {
               sx={{
                 fontFamily: "Robotics",
                 color: "white",
-                fontSize: "20px",
+                fontSize: { xs: "18px", sm: "20px" },
                 marginTop: 2,
               }}
             >
