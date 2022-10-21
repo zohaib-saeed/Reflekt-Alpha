@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: "AutoTeachnoItalic";
-  src: url("../public/fonts/Heading/auto-techno\ italic.ttf");
+  src: url("../public/fonts/auto-techno\ italic.ttf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Robotics";
-  src: url("../public/fonts/Regular/Robotica.ttf");
+  src: url("../public/fonts/Robotica.ttf");
   font-weight: 600;
   font-style: normal;
 }
