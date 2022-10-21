@@ -21,25 +21,27 @@ const Homepage = () => {
           alignItems: "center",
           flexDirection: "column",
           py: 6,
+          px: 2,
         }}
       >
         {/* Headline */}
         <Box
           sx={{
-            display: "flex",
+            display: { xs: "none", md: "flex" },
             justifyContent: "center",
-            alignItems: "fle-start",
+            alignItems: "flex-start",
             flexDirection: "column",
             width: "100%",
           }}
         >
+          {/* Headline => For Mobile */}
           <Box
             sx={{
               display: "flex",
               justifyContent: "center",
               alignItems: "flex-start",
               flexDirection: "column",
-              width: "auto",
+              width: "100%",
             }}
           >
             <Box
@@ -73,7 +75,7 @@ const Homepage = () => {
               color: "#FFCF00",
               letterSpacing: "3px",
               lineHeight: "100px",
-              fontSize: "75px",
+              fontSize: "61px",
             }}
           >
             Reflektalpha
@@ -85,6 +87,7 @@ const Homepage = () => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            flexDirection: { xs: "column-reverse", md: "row" },
             width: "100%",
             mt: 1,
             px: 0.5,
@@ -97,7 +100,8 @@ const Homepage = () => {
               justifyContent: "flex-start",
               alignItems: "flex-start",
               flexDirection: "column",
-              width: "50%",
+              width: { xs: "100%", sm: "95%", md: "50%" },
+              mt: { xs: 1.5, md: 0 },
             }}
           >
             <Typography
@@ -149,11 +153,11 @@ const Homepage = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              width: "300px",
-              height: "400px",
+              width: { xs: "250px", sm: "300px", md: "350px" },
+              height: { xs: "300px", sm: "350px", md: "400px" },
               position: "relative",
               transition: "all  0.3s ease",
-              mr: 2,
+              mr: { xs: 0, md: 2 },
             }}
           >
             <Image
@@ -173,7 +177,7 @@ const Homepage = () => {
             background: "black",
             py: 1.4,
             px: 2,
-            mt: 2,
+            mt: { xs: 7, md: 2 },
           }}
         >
           <Link href="https://www.discord.com">
@@ -225,10 +229,11 @@ const Homepage = () => {
         <Box
           sx={{
             display: "flex",
-            justifyContent: "flex-start",
+            justifyContent: { xs: "center", sm: "flex-start" },
             alignItems: "center",
+            flexDirection: { xs: "column-reverse", md: "row" },
             width: "100%",
-            mt: 3.5,
+            mt: { xs: 5.5, md: 3.5 },
           }}
         >
           {/* Footer => Horizontal Bar */}
@@ -237,12 +242,13 @@ const Homepage = () => {
               width: "30%",
               height: "10px",
               backgroundColor: "black",
+              mt: { xs: 1, md: 0 },
             }}
           ></Box>
           {/* Footer => Policy Id Text */}
           <Box
             sx={{
-              ml: 5,
+              ml: { xs: 0, md: 5 },
               px: 1,
               py: 0.2,
               backgroundColor: "black",
@@ -254,8 +260,9 @@ const Homepage = () => {
             <Typography
               sx={{
                 fontFamily: "Robotics",
-                fontSize: "18px",
+                fontSize: { xs: "16px", sm: "18px" },
                 color: "white",
+                textAlign: "center",
               }}
             >
               Policy ID: xxxxxxxxxxxxxxxxxxxx
