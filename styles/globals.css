@@ -3,11 +3,12 @@ body {
   padding: 0;
   margin: 0;
   font-family: Helvetica Neue, sans-serif;
+  background-color: #1a1a12;
 }
 
 * {
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
 }
