@@ -60,7 +60,8 @@ const Homepage = () => {
                   sx={{
                     width: "50px",
                     height: "5px",
-                    backgroundColor: "black",
+                    // backgroundColor: "black",
+                    backgroundColor: "#1a1a12",
                     mr: 15,
                   }}
                 ></Box>
@@ -70,7 +71,7 @@ const Homepage = () => {
                   sx={{
                     width: "200px",
                     height: "12px",
-                    backgroundColor: "black",
+                    backgroundColor: "#1a1a12",
                   }}
                 ></Box>
               </Fade>
@@ -87,7 +88,7 @@ const Homepage = () => {
                 fontSize: { xs: "61px", mdl: "75px" },
               }}
             >
-              Reflektalpha
+              Reflekt alpha
             </Typography>
           </Fade>
         </Box>
@@ -116,7 +117,7 @@ const Homepage = () => {
                 sx={{
                   width: "200px",
                   height: "9px",
-                  backgroundColor: "black",
+                  backgroundColor: "#1a1a12",
                 }}
               ></Box>
             </Fade>
@@ -246,7 +247,8 @@ const Homepage = () => {
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
-              background: "black",
+              background: "#1a1a12",
+              // background: "black",
               py: 1.4,
               px: 2,
               mt: { xs: 7, md: 2 },
@@ -315,7 +317,8 @@ const Homepage = () => {
             sx={{
               width: "30%",
               height: "10px",
-              backgroundColor: "black",
+              backgroundColor: "#1a1a12",
+              // backgroundColor: "black",
               mt: { xs: 1, md: 0 },
             }}
           ></Box>
@@ -325,7 +328,7 @@ const Homepage = () => {
               ml: { xs: 0, md: 5 },
               px: 1,
               py: 0.2,
-              backgroundColor: "black",
+              backgroundColor: "#1a1a12",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
