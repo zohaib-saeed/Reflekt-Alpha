@@ -317,7 +317,7 @@ const Homepage = () => {
             sx={{
               width: "30%",
               height: "10px",
-              backgroundColor: "#1a1a12",
+              backgroundColor: "black",
               // backgroundColor: "black",
               mt: { xs: 1, md: 0 },
             }}
@@ -328,7 +328,7 @@ const Homepage = () => {
               ml: { xs: 0, md: 5 },
               px: 1,
               py: 0.2,
-              backgroundColor: "#1a1a12",
+              backgroundColor: "black",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
