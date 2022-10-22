@@ -328,7 +328,6 @@ const Homepage = () => {
               ml: { xs: 0, md: 5 },
               px: 1,
               py: 0.2,
-              backgroundColor: "black",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -337,6 +336,7 @@ const Homepage = () => {
             <Fade left>
               <Typography
                 sx={{
+                  backgroundColor: "black",
                   fontFamily: "Robotics",
                   fontSize: { xs: "16px", sm: "18px" },
                   color: "white",
