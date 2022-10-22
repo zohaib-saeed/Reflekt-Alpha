@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Container, Button, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import Fade from "react-reveal/Fade";
+
 const Homepage = () => {
   return (
     <Box
@@ -34,6 +36,8 @@ const Homepage = () => {
             width: "100%",
           }}
         >
+          {/* => Bars */}
+
           <Box
             sx={{
               display: "flex",
@@ -51,38 +55,44 @@ const Homepage = () => {
                 width: { xs: "78%", mdl: "85%" },
               }}
             >
-              <Box
-                sx={{
-                  width: "50px",
-                  height: "5px",
-                  backgroundColor: "black",
-                  mr: 15,
-                }}
-              ></Box>
-              <Box
-                sx={{
-                  width: "200px",
-                  height: "12px",
-                  backgroundColor: "black",
-                }}
-              ></Box>
+              <Fade right>
+                <Box
+                  sx={{
+                    width: "50px",
+                    height: "5px",
+                    backgroundColor: "black",
+                    mr: 15,
+                  }}
+                ></Box>
+              </Fade>
+              <Fade right>
+                <Box
+                  sx={{
+                    width: "200px",
+                    height: "12px",
+                    backgroundColor: "black",
+                  }}
+                ></Box>
+              </Fade>
             </Box>
           </Box>
-          <Typography
-            sx={{
-              fontFamily: "AutoTeachnoItalic",
-              color: "#FFCF00",
-              letterSpacing: "3px",
-              lineHeight: "100px",
-              fontSize: { xs: "61px", mdl: "75px" },
-            }}
-          >
-            Reflektalpha
-          </Typography>
+          {/* => Heading Text */}
+          <Fade left>
+            <Typography
+              sx={{
+                fontFamily: "AutoTeachnoItalic",
+                color: "#FFCF00",
+                letterSpacing: "3px",
+                lineHeight: "100px",
+                fontSize: { xs: "61px", mdl: "75px" },
+              }}
+            >
+              Reflektalpha
+            </Typography>
+          </Fade>
         </Box>
 
         {/* Headline => For Mobile + Tablet View */}
-
         <Box
           sx={{
             display: { xs: "flex", md: "none" },
@@ -101,24 +111,28 @@ const Homepage = () => {
               width: "100%",
             }}
           >
-            <Box
-              sx={{
-                width: "200px",
-                height: "9px",
-                backgroundColor: "black",
-              }}
-            ></Box>
+            <Fade right>
+              <Box
+                sx={{
+                  width: "200px",
+                  height: "9px",
+                  backgroundColor: "black",
+                }}
+              ></Box>
+            </Fade>
           </Box>
-          <Typography
-            sx={{
-              fontFamily: "AutoTeachnoItalic",
-              color: "#FFCF00",
-              letterSpacing: "3px",
-              fontSize: { xs: "35px", sm: "50px" },
-            }}
-          >
-            Reflekt
-          </Typography>
+          <Fade left>
+            <Typography
+              sx={{
+                fontFamily: "AutoTeachnoItalic",
+                color: "#FFCF00",
+                letterSpacing: "3px",
+                fontSize: { xs: "35px", sm: "50px" },
+              }}
+            >
+              Reflekt
+            </Typography>
+          </Fade>
           <Typography
             sx={{
               fontFamily: "AutoTeachnoItalic",
@@ -153,48 +167,56 @@ const Homepage = () => {
               mt: { xs: 1.5, md: 0 },
             }}
           >
-            <Typography
-              sx={{
-                fontFamily: "Robotics",
-                color: "white",
-                fontSize: { xs: "18px", sm: "20px" },
-              }}
-            >
-              The Reflekt Alpha Chip is an NFT that grants you mirror access to
-              live chats from alpha groups in Cardano for a fraction of the
-              cost.
-            </Typography>
-            <Typography
-              sx={{
-                fontFamily: "Robotics",
-                color: "white",
-                fontSize: { xs: "18px", sm: "20px" },
-                marginTop: 2,
-              }}
-            >
-              Simply hold the NFT and authenticate on our Discord server for
-              access.
-            </Typography>
-            <Typography
-              sx={{
-                fontFamily: "Robotics",
-                color: "white",
-                fontSize: { xs: "18px", sm: "20px" },
-                marginTop: 2,
-              }}
-            >
-              Multiple alpha channels with no delay.
-            </Typography>
-            <Typography
-              sx={{
-                fontFamily: "Robotics",
-                color: "white",
-                fontSize: { xs: "18px", sm: "20px" },
-                marginTop: 2,
-              }}
-            >
-              Additional benifits for holders of multiple Reflekt Chips.
-            </Typography>
+            <Fade bottom>
+              <Typography
+                sx={{
+                  fontFamily: "Robotics",
+                  color: "white",
+                  fontSize: { xs: "18px", sm: "20px" },
+                }}
+              >
+                The Reflekt Alpha Chip is an NFT that grants you mirror access
+                to live chats from alpha groups in Cardano for a fraction of the
+                cost.
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                sx={{
+                  fontFamily: "Robotics",
+                  color: "white",
+                  fontSize: { xs: "18px", sm: "20px" },
+                  marginTop: 2,
+                }}
+              >
+                Simply hold the NFT and authenticate on our Discord server for
+                access.
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                sx={{
+                  fontFamily: "Robotics",
+                  color: "white",
+                  fontSize: { xs: "18px", sm: "20px" },
+                  marginTop: 2,
+                }}
+              >
+                Multiple alpha channels with no delay.
+              </Typography>
+            </Fade>
+            <Fade bottom>
+              <Typography
+                sx={{
+                  fontFamily: "Robotics",
+                  color: "white",
+                  fontSize: { xs: "18px", sm: "20px" },
+                  marginTop: 2,
+                }}
+              >
+                Additional benifits for holders of multiple Reflekt Chips.
+              </Typography>
+            </Fade>
           </Box>
           {/*Middle Section => Right Image */}
           <Box
@@ -218,62 +240,64 @@ const Homepage = () => {
           </Box>
         </Box>
         {/* Social Icons */}
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            background: "black",
-            py: 1.4,
-            px: 2,
-            mt: { xs: 7, md: 2 },
-          }}
-        >
-          <Link href="https://www.discord.com">
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                width: "40px",
-                height: "30px",
-                position: "relative",
-                transition: "all  0.3s ease",
-                cursor: "pointer",
-                mr: 1,
-              }}
-            >
-              <Image
-                src="/assets/pictures/discord_white.svg"
-                layout="fill"
-                objectFit="contain"
-                priority
-              />
-            </Box>
-          </Link>
-          <Link href="https://www.twitter.com">
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                width: "40px",
-                height: "30px",
-                position: "relative",
-                transition: "all  0.3s ease",
-                cursor: "pointer",
-                ml: 1,
-              }}
-            >
-              <Image
-                src="/assets/pictures/twitter_white.svg"
-                layout="fill"
-                objectFit="contain"
-                priority
-              />
-            </Box>
-          </Link>
-        </Box>
+        <Fade bottom>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              background: "black",
+              py: 1.4,
+              px: 2,
+              mt: { xs: 7, md: 2 },
+            }}
+          >
+            <Link href="https://www.discord.com">
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "40px",
+                  height: "30px",
+                  position: "relative",
+                  transition: "all  0.3s ease",
+                  cursor: "pointer",
+                  mr: 1,
+                }}
+              >
+                <Image
+                  src="/assets/pictures/discord_white.svg"
+                  layout="fill"
+                  objectFit="contain"
+                  priority
+                />
+              </Box>
+            </Link>
+            <Link href="https://www.twitter.com">
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "40px",
+                  height: "30px",
+                  position: "relative",
+                  transition: "all  0.3s ease",
+                  cursor: "pointer",
+                  ml: 1,
+                }}
+              >
+                <Image
+                  src="/assets/pictures/twitter_white.svg"
+                  layout="fill"
+                  objectFit="contain"
+                  priority
+                />
+              </Box>
+            </Link>
+          </Box>
+        </Fade>
         {/* Footer  */}
         <Box
           sx={{
@@ -286,6 +310,7 @@ const Homepage = () => {
           }}
         >
           {/* Footer => Horizontal Bar */}
+
           <Box
             sx={{
               width: "30%",
@@ -306,16 +331,18 @@ const Homepage = () => {
               alignItems: "center",
             }}
           >
-            <Typography
-              sx={{
-                fontFamily: "Robotics",
-                fontSize: { xs: "16px", sm: "18px" },
-                color: "white",
-                textAlign: "center",
-              }}
-            >
-              Policy ID: xxxxxxxxxxxxxxxxxxxx
-            </Typography>
+            <Fade left>
+              <Typography
+                sx={{
+                  fontFamily: "Robotics",
+                  fontSize: { xs: "16px", sm: "18px" },
+                  color: "white",
+                  textAlign: "center",
+                }}
+              >
+                Policy ID: xxxxxxxxxxxxxxxxxxxx
+              </Typography>
+            </Fade>
           </Box>
         </Box>
       </Container>
