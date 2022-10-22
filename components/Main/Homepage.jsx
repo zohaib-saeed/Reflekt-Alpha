@@ -328,7 +328,7 @@ const Homepage = () => {
               ml: { xs: 0, md: 5 },
               px: 1,
               py: 0.2,
-              backgroundColor: "black",
+              backgroundColor: "#1a1a12",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
