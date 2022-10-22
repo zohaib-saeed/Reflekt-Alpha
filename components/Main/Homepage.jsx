@@ -85,7 +85,7 @@ const Homepage = () => {
                 color: "#FFCF00",
                 letterSpacing: "3px",
                 lineHeight: "100px",
-                fontSize: { xs: "61px", mdl: "75px" },
+                fontSize: { xs: "61px", mdl: "73px", lg: "78px" },
               }}
             >
               Reflekt alpha
@@ -153,7 +153,7 @@ const Homepage = () => {
             alignItems: "center",
             flexDirection: { xs: "column-reverse", md: "row" },
             width: "100%",
-            mt: 1,
+            mt: 3,
             px: 0.5,
           }}
         >
@@ -225,8 +225,8 @@ const Homepage = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              width: { xs: "250px", sm: "300px", md: "350px" },
-              height: { xs: "300px", sm: "350px", md: "400px" },
+              width: { xs: "250px", sm: "300px", md: "320px" },
+              height: { xs: "300px", sm: "350px", md: "370px" },
               position: "relative",
               transition: "all  0.3s ease",
               mr: { xs: 0, md: 2 },
